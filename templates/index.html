@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Herd Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1> Animal Herd Detection</h1>
+        <p class="description">Upload an image or video to analyze and detect animal herds.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file-upload" required>
+            <label for="file-upload" class="custom-file-upload"> Choose File</label>
+            <button type="submit"> Upload & Detect</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

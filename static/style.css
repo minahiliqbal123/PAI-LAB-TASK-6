@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Glassmorphism Container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    max-width: 600px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffcc29;
+    text-shadow: 3px 3px 10px rgba(255, 204, 41, 0.7);
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* File Upload */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 118, 132, 0.3);
+}
+
+.custom-file-upload:hover {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+}
+
+/* Upload Button */
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to right, #3ddad7, #44b09e);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(61, 218, 215, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to right, #44b09e, #3ddad7);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
